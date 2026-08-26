@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  TapForce launcher mark.
+
+  The FORCE POD, not the ship: the pod is what the game is about, and a ring
+  reads at 48dp where a small triangle would turn to mush. Drawn as bright
+  strokes on transparency so it sits correctly on the adaptive background and
+  matches the emissive look of everything the game draws.
+
+  108dp viewport; the safe zone is the middle 66dp, so nothing structural
+  strays outside a 21dp margin.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Pod: outer ring -->
+    <path
+        android:strokeColor="#FFD24A"
+        android:strokeWidth="5"
+        android:fillColor="#00000000"
+        android:pathData="M54,32 a22,22 0 1,1 -0.1,0" />
+
+    <!-- Pod: core -->
+    <path
+        android:strokeColor="#FFF0B0"
+        android:strokeWidth="4"
+        android:fillColor="#33FFD24A"
+        android:pathData="M54,44 a10,10 0 1,1 -0.1,0" />
+
+    <!-- Three orbiting ticks, at 120 degrees -->
+    <path
+        android:strokeColor="#FFD24A"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M54,26 L54,18" />
+    <path
+        android:strokeColor="#FFD24A"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M70.5,63.5 L77.4,67.5" />
+    <path
+        android:strokeColor="#FFD24A"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M37.5,63.5 L30.6,67.5" />
+
+    <!-- The ship below it, docked -->
+    <path
+        android:strokeColor="#66FFD9"
+        android:strokeWidth="5"
+        android:strokeLineJoin="round"
+        android:fillColor="#3366FFD9"
+        android:pathData="M54,74 L66,92 L42,92 Z" />
+</vector>
